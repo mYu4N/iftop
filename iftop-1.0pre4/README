@@ -1,3 +1,29 @@
+========2023-12
+add timestamp
+
+demo:
+# iftop -i eth0 -P -N -t -n
+interface: eth0
+IP address is: 10.0.209.141
+MAC address is: 00:16:3e:0c:ffffffc1:ffffff85
+Listening on eth0
+Fri Dec  1 17:31:32 2023 <---- this line
+ 
+   # Host name (port/service if enabled)            last 2s   last 10s   last 40s cumulative
+--------------------------------------------------------------------------------------------
+   1 10.0.209.141:35232                       =>     27.8Kb     27.8Kb     27.8Kb     6.94KB
+     100.100.30.26:80                         <=       160b       160b       160b        40B
+   2 10.0.209.141:22                          =>       656b       656b       656b       164B
+     106.11.34.37:57928                       <=       208b       208b       208b        52B
+--------------------------------------------------------------------------------------------
+Total send rate:                                     28.4Kb     28.4Kb     28.4Kb
+Total receive rate:                                    368b       368b       368b
+Total send and receive rate:                         28.8Kb     28.8Kb     28.8Kb
+--------------------------------------------------------------------------------------------
+Peak rate (sent/received/total):                     28.4Kb       368b     28.8Kb
+Cumulative (sent/received/total):                    7.10KB        92B     7.19KB
+============================================================================================
+=============
 README for iftop
 $Id: README,v 1.8 2003/06/06 22:42:34 pdw Exp $
 
